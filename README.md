@@ -2,9 +2,9 @@
 
 **Community-maintained by [mazemax](https://github.com/mazemax); not endorsed by Botpress.**
 
-A production-oriented community distribution of the official [Botpress ADK skills](https://github.com/botpress/skills) for VS Code + GitHub Copilot, with immutable provenance, explicit side-effect guidance, validation tooling, and honest compatibility evidence.
+A production-oriented community distribution of the official [Botpress ADK skills](https://github.com/botpress/skills) for VS Code + GitHub Copilot, with 12 host-native commands, immutable provenance, explicit side-effect guidance, validation tooling, and honest compatibility evidence.
 
-**Current status:** `1.0.0-rc.1` release candidate. The repository foundation is implemented; clean GitHub Copilot installation, model behavior, external beta, and marketplace review are not yet verified. Do not interpret the manifest or static checks as production readiness.
+**Current status:** `1.0.0-rc.1` release candidate. Native command generation and source-install documentation are implemented; clean GitHub Copilot installation, command invocation, model behavior, external beta, and marketplace review are not verified. Do not interpret the manifest, generated files, or static checks as production readiness.
 
 ## Included official content
 
@@ -19,13 +19,13 @@ Upstream `v2.0.7` at commit `79abe10503bf6dc70486737c94159322e108e496` provides 
 | `adk-evals` | Official ADK eval format, assertions, and live-dev testing guidance |
 | `adk-frontend` | Botpress frontend authentication, typed clients, action calls, and state patterns |
 
-The pinned source also contains 12 official commands, retained under `upstream/commands/` for audit and Stage 2 conversion where applicable. They are not silently exposed as portable commands. Codex remains skills-only.
+The 12 official Claude Code commands remain under `upstream/commands/` as read-only sources. `npm run generate:commands` mechanically adapts them into `com.github.copilot/commands/`; drift checks reject missing, extra, or manually edited generated files. No agents, hooks, MCP servers, or replacement ADK knowledge are added.
 
 ## Install and first success
 
-Follow [the GitHub Copilot quickstart](docs/quickstart.md), then use the [workflow guide](docs/workflows.md) and [real-host checklist](tests/host-checklists/copilot.md). Marketplace installation is not currently available or claimed.
+Follow [the GitHub Copilot quickstart](docs/quickstart.md), then use the [workflow guide](docs/workflows.md) and [real-host checklist](tests/host-checklists/copilot.md). The quickstart covers direct Git installation in VS Code and source/local installation in Copilot CLI. Direct installation is not an Awesome Copilot listing, official review, or endorsement.
 
-Start with a read-oriented ADK question in a fresh session. For project work, use a disposable ADK directory, synthetic data, and a dedicated non-production workspace.
+Start with a read-oriented ADK question or select an `adk-*` entry from the host's actual `/` picker in a fresh session. For project work, use a disposable ADK directory, synthetic data, and a dedicated non-production workspace.
 
 ## What this plugin does not do
 
