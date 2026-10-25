@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "botpress-adk-community",
+  "version": "1.0.0-rc.1",
+  "description": "Community-maintained Botpress ADK skills for VS Code and GitHub Copilot. Community-maintained by mazemax; not endorsed by Botpress.",
+  "author": {
+    "name": "mazemax",
+    "url": "https://github.com/mazemax"
+  },
+  "homepage": "https://github.com/mazemax/botpress-adk-copilot-plugin",
+  "repository": "https://github.com/mazemax/botpress-adk-copilot-plugin",
+  "license": "MIT",
+  "keywords": [
+    "botpress",
+    "adk",
+    "agent-development",
+    "community"
+  ]
+}

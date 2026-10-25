@@ -1,0 +1,7 @@
+{
+  "host": "copilot",
+  "repository": "https://github.com/mazemax/botpress-adk-copilot-plugin",
+  "pluginName": "botpress-adk-community",
+  "displayName": "Botpress ADK Community",
+  "manifestPath": "plugin.json"
+}
