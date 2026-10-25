@@ -14,6 +14,8 @@ All notable distribution changes are recorded here. Upstream ADK changes are ide
 - Twelve generated Copilot commands under `com.github.copilot/commands/`, with exact inventory/content drift checks and unit tests.
 - Host-specific direct-source installation, workflow, troubleshooting, update, rollback, uninstall, and submission guidance with untested surfaces identified.
 - Command purposes, prerequisites, side effects, conservative picker-based invocation guidance, and copyable natural-language alternatives.
+- Versioned Stage 3 activation, negative, overlap, command, comparison, and critical-safety inventories with deterministic structural validation.
+- Compatibility state matrix, sanitized real-host result template, and reproducible evaluation protocols; no live behavior result is implied.
 
 ### Not yet verified
 
