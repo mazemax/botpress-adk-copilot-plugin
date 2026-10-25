@@ -15,9 +15,12 @@ The roadmap improves packaging and developer experience without adding a doctor 
 
 ## Stage 2 — Host-native developer experience
 
-- Complete and test the GitHub Copilot quickstart, workflow guide, troubleshooting, update, rollback, and uninstall paths.
-- Add only the host-specific packaging required by the approved plan.
-- Produce current screenshots and review materials from verified workflows.
+**Status:** In progress. Twelve generated commands and host-specific documentation are implemented locally; real-host discovery, invocation, and golden paths remain open.
+
+- Generate all 12 upstream commands into `com.github.copilot/commands/` and enforce exact inventory/content drift checks.
+- Document direct Git installation in VS Code and source/local installation in Copilot CLI without treating one host's result as evidence for the other.
+- Provide command purposes, prerequisites, side effects, picker-based invocation guidance, and natural-language alternatives.
+- Complete real-host workflows before capturing screenshots or presenting review materials as verified evidence.
 
 ## Stage 3 — Behavior, safety, and compatibility
 
